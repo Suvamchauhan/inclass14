@@ -1,0 +1,66 @@
+@charset "UTF-8";
+/* Styles for jQuery UI Interactions */
+body {
+	font-family: sans-serif;
+}
+#draggable {
+	width: 100px;
+	height: 100px;
+	padding: 0.5em;
+	background: red;
+	color: white;
+	position: absolute;
+	top: 50px;
+	right: 50px;
+	z-index: 100;
+}
+#draggable2 {
+	width: 100px;
+	height: 100px;
+	padding: 0.5em;
+	background: lightblue;
+	color: white;
+	position: absolute;
+	top: 50px;
+	right: 200px;
+	z-index: 200;
+}
+#droppable {
+	width: 200px;
+	height: 200px;
+	padding: 0.5em;
+	border: 5px dotted black;
+	background: white;
+	position: absolute;
+	top: 50px;
+	right: 350px;
+}
+#sortable {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	width: 250px;
+}
+#sortable li {
+	margin: 0 3px 3px 3px;
+	padding: 0.4em;
+	padding-left: 1.5em;
+	font-size: 1.4em;
+	height: 18px;
+	border: 5px solid #000;
+	background: lightblue;
+}
+#sortable li span {
+	position: absolute;
+	margin-left: -1.3em;
+}
+/* Interactive Classes */
+.move {
+	cursor: move;
+}
+.ui-state-hove {
+	background-color: yellow  !important;
+}
+.ui-state-highlight{
+	background-color: grey  !important;
+}
